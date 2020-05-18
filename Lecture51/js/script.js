@@ -6,15 +6,13 @@ function makeMultiplier (multiplier) {
   }
   b();
 
-  return multiplier * x;
 
+  return (
+      function (x) {
+        return multiplier * x;
+      }
 
-  // return (
-  //     function (x) {
-  //       return multiplier * x;
-  //     }
-  //
-  //   );
+    );
 }
 
 var doubleAll = makeMultiplier(2);
