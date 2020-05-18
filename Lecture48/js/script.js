@@ -3,7 +3,13 @@ function Circle (radius) {
   this.radius = radius;
 }
 
-Circle.prototype.getArea = 
+// this.getArea = {
+//   function(){
+//     return Math.PI * Math.pow(this.radius, 2);
+//   };
+// }
+
+Circle.prototype.getArea =
   function () {
     return Math.PI * Math.pow(this.radius, 2);
   };
@@ -14,7 +20,3 @@ console.log(myCircle.getArea());
 
 var myOtherCircle = new Circle(20);
 console.log(myOtherCircle);
-
-
-
-
